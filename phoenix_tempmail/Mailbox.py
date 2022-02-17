@@ -1,0 +1,26 @@
+import os
+import email
+
+class Email:
+    def __init__(self):
+        self.from_email = ""
+        self.date = ""
+        self.subject = ""
+        self.to = ""
+        self.content = ""
+
+
+class Mail:
+
+    @staticmethod
+    def formate_email(data):
+        formated_email = Email()
+        msg = email.message_from_string(data)
+        formated_email.from_email = msg['from']
+        formated_email.date = msg["date"]
+        formated_email.subject = msg["subject"]
+        formated_email.to = msg["to"]
+        for payload in msg.get_payload():
+            charset_type = str(payload.get_content_charset())
+            formated_email.content += payload.get_payload(decode=True).decode(charset_type)
+        return formated_email
