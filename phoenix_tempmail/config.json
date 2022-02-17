@@ -1,0 +1,7 @@
+{
+    "log_path": "/opt/phoenix_tempmail/phoenix.log",
+    "auth": {
+        "username": "phoenixkiller",
+        "password": "phoenixkiller"
+    }
+}
