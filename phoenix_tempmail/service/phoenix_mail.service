@@ -1,0 +1,13 @@
+[Unit]
+Description=phoenix smtp server
+After=phoenix_server.target
+StartLimitIntervalSec=0
+[Service]
+Type=phoenix_mail
+Restart=always
+RestartSec=1
+User=root
+ExecStart=/bin/bash /opt/phoenix_tempmail/phoenix_tempmail/runner.sh
+
+[Install]
+WantedBy=multi-user.target
