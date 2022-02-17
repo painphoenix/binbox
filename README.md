@@ -1,7 +1,7 @@
-# spam_box
+# bin_box
 ![Screenshot](https://raw.githubusercontent.com/ScRiPt1337/spam_box/main/banner.png)
 
-bin_mail is a self hosted temp mail service by phoenix
+bin_box is a self hosted temp mail service by phoenix
 
 ### Requirement
 
@@ -11,7 +11,7 @@ bin_mail is a self hosted temp mail service by phoenix
 
 ### How to install in linux
 ```bash
-curl -s -L https://raw.githubusercontent.com/ScRiPt1337/spam_box/main/install.sh | bash
+curl -s -L https://raw.githubusercontent.com/painphoenix/binbox/main/install.sh | bash
 ```
 
 ### Dashboard
